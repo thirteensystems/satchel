@@ -4,7 +4,7 @@ Satchel User Manual
 .. toctree::
    :maxdepth: 1
 
-   introdution
+   introduction
 
 :TODO: Under construction
 
