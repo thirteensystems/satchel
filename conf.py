@@ -20,6 +20,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import sphinx_rtd_theme
 
 # -- General configuration ------------------------------------------------
 
@@ -49,8 +50,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Satchel User Documentation'
-copyright = '2017, Thirteen Systems'
+project = 'Scriblet User Documentation'
+copyright = '2019, Thirteen Systems'
 author = 'Thirteen Systems'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -120,7 +121,10 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+# html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -134,7 +138,7 @@ html_theme = 'alabaster'
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = 'Satchel User Documentation vv0.1'
+# html_title = 'Scriblet User Documentation vv0.1'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -234,7 +238,7 @@ html_static_path = ['_static']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'SatchelUserDocumentationdoc'
+htmlhelp_basename = 'ScribletUserDocumentationdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -260,7 +264,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'SatchelUserDocumentation.tex', 'Satchel User Documentation Documentation',
+    (master_doc, 'ScribletUserDocumentation.tex', 'Scriblet User Documentation Documentation',
      'Thirteen Systems', 'manual'),
 ]
 
@@ -286,7 +290,7 @@ latex_documents = [
 #
 # latex_appendices = []
 
-# It false, will not define \strong, \code, 	itleref, \crossref ... but only
+# It false, will not define \strong, \code,     itleref, \crossref ... but only
 # \sphinxstrong, ..., \sphinxtitleref, ... To help avoid clash with user added
 # packages.
 #
@@ -302,7 +306,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'satcheluserdocumentation', 'Satchel User Documentation Documentation',
+    (master_doc, 'satcheluserdocumentation', 'Scriblet User Documentation Documentation',
      [author], 1)
 ]
 
@@ -317,8 +321,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'SatchelUserDocumentation', 'Satchel User Documentation Documentation',
-     author, 'SatchelUserDocumentation', 'One line description of project.',
+    (master_doc, 'ScribletUserDocumentation', 'Scriblet User Documentation Documentation',
+     author, 'ScribletUserDocumentation', 'One line description of project.',
      'Miscellaneous'),
 ]
 

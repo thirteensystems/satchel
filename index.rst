@@ -1,5 +1,5 @@
-Satchel User Manual
-===================
+Scriblet User Manual
+====================
 
 .. toctree::
    :maxdepth: 1
